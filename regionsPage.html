@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-image: url("images/background-texture.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .region {
+            margin: 25px 40px;
+            padding: 10px 20px 15px 30px;
+            width: 420px;
+            height: 150px;
+            font-size: 22px;
+            border: 8px solid #000000;
+            float: left;
+            border-radius: 6px 15px 20px 10px;
+            background-size: 200px 150px;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-color: #979797ce;
+            background-clip: border-box;
+
+            border-image: url("./images/border.png") 30% round;
+        }
+
+        .region:active {
+            background-color: #555555;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <div id="navbar">
+        <div class="navbar-brand">French Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="regionsPage.html">Regions</a></li>
+                <li><a href="destinationsPage.html">Destinations</a></li>
+                <li><a href="galleryPage.html">Gallery</a></li>
+                <li><a href="capitalsPage.html">Capitals</a></li>
+                <li><a href="signupPage.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar ends here -->
+
+    <h1>France is made up of 13 administrative regions</h1>
+
+    <div class="region" id="auvergne">Auvergne-Rhône-Alpes</div>
+    <div class="region" id="bourgone">Bourgogne-Franche-Comté</div>
+    <div class="region" id="brittany">Brittany</div>
+    <div class="region" id="valLoire">Centre-Val de Loire</div>
+    <div class="region" id="corsica">Corsica</div>
+    <div class="region" id="grandEst">Grand Est</div>
+    <div class="region" id="hauts">Hauts-de-France</div>
+    <div class="region" id="Île-de">Île-de-France</div>
+    <div class="region" id="normandie">Normandie</div>
+    <div class="region" id="aquitanie">Nouvelle-Aquitaine</div>
+    <div class="region" id="occitanie">Occitanie</div>
+    <div class="region" id="paysLoire">Pays de la Loire</div>
+    <div class="region" id="côte">Provence Alpes Côte d’Azur</div>
+</body>
+
+</html>

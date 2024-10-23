@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <div id="navbar">
+        <div class="navbar-brand">French Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="regionsPage.html">Regions</a></li>
+                <li><a href="destinationsPage.html">Destinations</a></li>
+                <li><a href="galleryPage.html">Gallery</a></li>
+                <li><a href="capitalsPage.html">Capitals</a></li>
+                <li><a href="signupPage.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar ends here -->
+
+    <form id="f1">
+        <div class="card signup-card">
+            <div class="card-header">Sign Up</div>
+
+            <!-- card body starts -->
+            <div class="card-body">
+
+                <div class="form-element">
+                    <div class="form-label"><label for="email">Email *</label></div>
+                    <div class="form-control-container"><input type="email" class="form-control" id="email" name="email"
+                            autocomplete="off" autofocus="autofocus" placeholder="Email address" required="required"
+                            maxlength="30">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Password *</label></div>
+                    <div class="form-control-container"><input type="password" class="form-control" id="password"
+                            name="password" placeholder="Password" required="required" maxlength="15"
+                            pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15})" title="Password should be between 6 to 15 
+                            characters, with at least one uppercase letter, one lowercase letter and one digit">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="name">Name *</label></div>
+                    <div class="form-control-container"><input type="text" class="form-control" id="name" name="name"
+                            placeholder="Enter Name" required="required" pattern="^[A-Za-z ]*$"
+                            title="Only alphabets and spaces are accepted."></div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="city">City</label></div>
+                    <div class="form-control-container"><input type="text" class="form-control" id="city" name="city"
+                            placeholder="City" maxlength="25" list="cities">
+
+                        <datalist id="cities">
+                            <option value="Paris"></option>
+                            <option value="Marseille"></option>
+                            <option value="Lyon"></option>
+                            <option value="Toulouse"></option>
+                            <option value="Nice"></option>
+                            <option value="Nantes"></option>
+                            <option value="Strasbourg"></option>
+                            <option value="Montpellier"></option>
+                            <option value="Bordeaux"></option>
+                            <option value="Lille"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="favorite-color">Favorite Color</label></div>
+                    <div class="form-control-container"><input type="color" class="form-control" id="favorite-color"
+                            name="favorite_color">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="date-of-birth">Date of Birth *</label></div>
+                    <div class="form-control-container"><input type="date" class="form-control" id="date-of-birth"
+                            name="dob" required="required">
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Journey Details</legend>
+
+                    <div class="form-element">
+                        <div class="form-label"><label for="week-of-journey">Week of Journey</label></div>
+                        <div class="form-control-container"><input type="week" class="form-control" id="week-of-journey"
+                                name="journey_week">
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <div class="form-label"><label for="month-of-journey">Month of Journey</label></div>
+                        <div class="form-control-container"><input type="month" class="form-control"
+                                id="month-of-journey" name="journey_month">
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <div class="form-label"><label for="time-of-journey">Time of Journey</label></div>
+                        <div class="form-control-container"><input type="time" class="form-control" id="time-of-journey"
+                                name="journey_time">
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <div class="form-label"><label for="date-and-time">Date & Time of Journey</label></div>
+                        <div class="form-control-container"><input type="datetime-local" class="form-control"
+                                id="date-and-time" name="journey_date_time">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="attachment">Attachment</label></div>
+                    <div class="form-control-container"><input type="file" class="form-control" id="attachment"
+                            name="attachment" multiple="multiple">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="portfolio-url">Portfolio URL</label></div>
+                    <div class="form-control-container"><input type="url" class="form-control" id="portfolio-url"
+                            name="portfolio_url" readonly="readonly">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="journey-price">Price of Journey</label></div>
+                    <div class="form-control-container"><input type="number" class="form-control" id="journey-price"
+                            name="journey_price" step="10" min="0" max="100">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="website-range">Website Rating</label></div>
+                    <div class="form-control-container"><input type="range" min="0" max="10" class="form-control"
+                            id="website-range" name="website_range">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label">
+                        <label for="gender">Gender</label>
+                    </div>
+                    <div class="form-control-container">
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                        <input type="radio" id="others" name="gender">
+                        <label for="others">Others</label>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label">
+                        &nbsp;
+                    </div>
+                    <div class="form-control-container">
+                        <input type="checkbox" id="news-letters" name="receive_news_letters">
+                        <label for="news-letters">Receive News Letters</label>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="form-control-container">
+                        <textarea id="address" name="address" class="form-control" cols="60" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="form-control-container">
+                        <select id="country" name="country" class="form-control">
+                            <option value="">Please Select</option>
+                            <optgroup label="A">
+                                <option value="Andorra">Andorra</option>
+                            </optgroup>
+
+                            <optgroup label="B">
+                                <option value="Belgium">Belgium</option>
+                            </optgroup>
+
+                            <optgroup label="G">
+                                <option value="Germany">Germany</option>
+                            </optgroup>
+
+                            <optgroup label="I">
+                                <option value="Italy">Italy</option>
+                            </optgroup>
+
+                            <optgroup label="L">
+                                <option value="Luxembourg">Luxembourg</option>
+                            </optgroup>
+
+                            <optgroup label="M">
+                                <option value="Monaco">Monaco</option>
+                            </optgroup>
+
+                            <optgroup label="S">
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Spain">Spain</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- card body ends -->
+
+            <div class="card-footer">
+                <input type="hidden" name="usertype" value="customer">
+
+                <button class="btn" formaction="https://postman-echo.com/post" formmethod="post"
+                    formtarget="myiframe">Submit</button>
+
+                <input type="reset" class="btn reset-button" value="Clear">
+
+                <div>
+                    * marks are mandatory fields.
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="center">
+        <input type="text" name="friendname" placeholder="Name of your friend" form="f1">
+    </div>
+
+    <iframe name="myiframe" width="100%" height="400px" title="testframe"></iframe>
+</body>
+
+</html>
